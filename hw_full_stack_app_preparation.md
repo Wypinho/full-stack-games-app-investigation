@@ -22,21 +22,21 @@ Draw a diagram showing the dataflow through the application starting with a form
 ### Questions
 
 1. What is responsible for defining the routes of the `games` resource?
-<!-- create_router.js -->
+create_router.js
 2. What do you notice about the folder structure?  Whats the client responsible for? Whats the server responsible for?
-<!-- folder structure: fetches separated into services folder. client: styling, html elements, vue components. server: routers, db updating, api creation. -->
+folder structure: fetches separated into services folder. client: styling, html elements, vue components. server: routers, db updating, api creation.
 3. What are the the responsibilities of server.js?
-<!-- listen for server activity, set up db, make calls to router -->
+listen for server activity, set up db, make calls to router
 4. What are the responsibilities of the `gamesRouter`?
-<!-- pass gamesCollection from the db to create_router file -->
+pass gamesCollection from the db to create_router file
 5. What process does the the client (front-end) use to communicate with the server?
-<!-- fetches within GameService.js passing JSON objects -->
+fetches within GameService.js passing JSON objects
 6. What optional second argument does the `fetch` method take? And what is it used for in this application? Hint: See [Using Fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) on the MDN docs
-<!-- an init object. In this application this creates the JSON object to pass to the server. -->
+an init object. In this application this creates the JSON object to pass to the server.
 7. Which of the games API routes does the front-end application consume (i.e. make requests to)?
-<!-- get, delete and post -->
+get, delete and post
 8. What are we using the [MongoDB Driver](http://mongodb.github.io/node-mongodb-native/) for?
-<!-- to link the application to the games database -->
+to link the application to the games database
 
 ## Extension
 
